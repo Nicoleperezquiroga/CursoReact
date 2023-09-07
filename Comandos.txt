@@ -1,0 +1,23 @@
+1. Antes de crear una app se debe tener instalado npm, para instalar ingresar lo siguiente: npm install -g npm
+2. Crear aplicación react: npx create-react-app NombreAplicacion o npm create vite
+3. Correr en servidor local react-app: npm start 
+4. Correr en servidor local vite: npm run dev
+5. props son las propiedad en react que permiten comunicar componentes
+6. propTypes permite dar tipo de dato y referir si es requerido un elemento esperado por la componente.
+PRUEBAS
+- npm install --save-dev jest
+- agregar a package.json {
+  "scripts": {
+    "test": "jest --watchAll"
+  }
+}
+- npm add -D @types/jest ayuda con autocompletado
+-npm install --save-dev babel-jest @babel/core @babel/preset-env
+-crear archivo en el root babel.config.js
+- agrgar lo siguiente al archivo
+module.exports = {
+  presets: [['@babel/preset-env', {targets: {node: 'current'}}]],
+};
+
+Para el testing se utiliza jest pero actualmente jest no es muy bueno para testear compoenentes de react
+
