@@ -17,8 +17,8 @@
     "whatwg-fetch": "^3.6.18"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.11",
-    "@babel/preset-env": "^7.22.14",
+    "@babel/core": "^7.22.15",
+    "@babel/preset-env": "^7.22.15",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.4",
     "@types/react": "^18.2.15",
