@@ -1,50 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pruebas en <FirstApp/> debe hacer match con el snapshot 1`] = `
+exports[`Pruebas CounterApp debe hacer match con el snapshot 1`] = `
 {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <h1>
-        Hola Soy Goku
-      </h1>
-      <p>
-        123
-      </p>
-      <h1>
-        Función getMensaje
-      </h1>
-      <code>
-        {"message":"Hola mundo","title":"Fernando"}
-      </code>
-      <h1>
-        Nicole
-      </h1>
-      <p>
-        Fernando
-      </p>
-    </div>
-  </body>,
-  "container": <div>
-    <h1>
-      Hola Soy Goku
-    </h1>
-    <p>
-      123
-    </p>
-    <h1>
-      Función getMensaje
-    </h1>
-    <code>
-      {"message":"Hola mundo","title":"Fernando"}
-    </code>
-    <h1>
-      Nicole
-    </h1>
-    <p>
-      Fernando
-    </p>
-  </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
   "findAllByDisplayValue": [Function],
@@ -78,6 +35,7 @@ exports[`Pruebas en <FirstApp/> debe hacer match con el snapshot 1`] = `
   "getByTestId": [Function],
   "getByText": [Function],
   "getByTitle": [Function],
+  "logTestingPlaygroundURL": [Function],
   "queryAllByAltText": [Function],
   "queryAllByDisplayValue": [Function],
   "queryAllByLabelText": [Function],
@@ -94,7 +52,5 @@ exports[`Pruebas en <FirstApp/> debe hacer match con el snapshot 1`] = `
   "queryByTestId": [Function],
   "queryByText": [Function],
   "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
 }
 `;

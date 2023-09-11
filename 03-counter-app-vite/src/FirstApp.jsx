@@ -22,9 +22,9 @@ export const FirstApp = ({title, subtitle, name }) =>{
 
         <p>{subtitle}</p>
          {/*<p>{subtitle}</p>*/}
-        <h1>{getMensaje()}</h1>
-        <code>{ JSON.stringify(newMessage1) }</code>
-        <h1>{newMessage}</h1>
+        <p>{getMensaje()}</p>
+        <p>{ JSON.stringify(newMessage1) }</p>
+        <p>{newMessage}</p>
         <p>{name}</p>
     </>
     );

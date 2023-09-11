@@ -13,15 +13,15 @@ exports[`Pruebas en <FirstApp/> debe hacer match con el snapshot 1`] = `
   <p>
     123
   </p>
-  <h1>
+  <p>
     Función getMensaje
-  </h1>
-  <code>
+  </p>
+  <p>
     {"message":"Hola mundo","title":"Fernando"}
-  </code>
-  <h1>
+  </p>
+  <p>
     Nicole
-  </h1>
+  </p>
   <p>
     Fernando
   </p>

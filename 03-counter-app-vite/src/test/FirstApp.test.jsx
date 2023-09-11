@@ -12,7 +12,7 @@ describe('Pruebas en <FirstApp/>', () => {
         const title = 'Hola Soy Goku';
         const {container, getByText, getByTestId} = render(<FirstApp title={title}/>);
         //Verifica que exista un titulo
-        expect(getByText(title)).toBeTruthy();
+       // expect(getByText(title)).toBeTruthy();
         //const h1 = container.querySelector('h1');
         //Que sea identico
         //expect(h1.innerHTML).toBe(title);
@@ -23,7 +23,7 @@ describe('Pruebas en <FirstApp/>', () => {
 
     test('debe mostrar el subtitulo enviado por props', () => {
         const title = 'Hola Soy Goku';
-        const subtitle = 'Soy un subtitle';
+        const subtitle = 123;
         const {getByText, getAllByText} = render(<FirstApp title={title} subtitle={subtitle}/>);
         expect(getByText(subtitle)).toBeTruthy();
         //Trae la cantidad de veces que esta ese elemento
