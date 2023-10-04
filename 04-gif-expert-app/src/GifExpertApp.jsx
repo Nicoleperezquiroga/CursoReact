@@ -1,19 +1,22 @@
 //Despues de la versión 17 de react no es necesario importarlo
 //import React from "react";
 import { useState } from "react";
-import { AddCategory } from "./Components/AddCategory";
+import { AddCategory,GifGrid  } from "./Components";
+
+
 export const GifExpertApp = () => {
     
     //Esto asegura espacio en memoria para almacenar categorias y modificarlas
     //No poner los hooks en condiciones
-    const [categorias, setCategorias] = useState(['One Punch', 'Dragon Ball']);
+    const [categorias, setCategorias] = useState(['One Punch']);
     
-    const onAddCategory = (event, valor) =>{
+    const onAddCategory = (newCategory) =>{
+        //Se valida que no se agrega una category existente
+        if(categorias.includes(newCategory)) return;
         //Otra forma de hacer lo mismo
         //setCategorias(categorias => [...categorias,valor]);
         //Forma resumimda
-        setCategorias([valor,...categorias]);
-        console.log(categorias);
+        setCategorias([newCategory,...categorias]);
     }
     return (
         <>
@@ -21,15 +24,21 @@ export const GifExpertApp = () => {
             <h1>GifExpertApp</h1>
             {/*Input*/}
             {/*Se pueden mandar parametros a otras componentes, estos pueden ser variables o funciones*/}
-            <AddCategory setCategorias = {setCategorias}/>            
+            <AddCategory 
+            //setCategorias = {setCategorias}
+            onNewCategory={event=>onAddCategory(event)}
+            />            
             {/*<AddCategory hola="Hola"/>*/}         
           
             {/*Listado de GIF*/}
-            <ol>
-                {categorias.map(category => {
-                    return <li key={category}>{category}</li>
-                })}
-            </ol>
+       
+                {categorias.map((category) => (
+                        <GifGrid 
+                        key={category}
+                        category= {category}
+                        />
+                ))}
+            
                 {/*GIF ITEM*/}
         </>
     );

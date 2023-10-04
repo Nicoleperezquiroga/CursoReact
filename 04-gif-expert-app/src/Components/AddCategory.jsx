@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export const AddCategory = ({setCategorias}) => {
+export const AddCategory = ({onNewCategory}) => {
     const [inputValue, setInputValue] = useState('One Punch');
     
     const onInputChange = ({target}) => {
@@ -12,7 +12,8 @@ export const AddCategory = ({setCategorias}) => {
         //Evita comportamiento basico de un form que es recargar al presionar enter
         event.preventDefault();
         if(inputValue.trim().length <=1) return;
-        setCategorias(categorias => [inputValue, ...categorias]);
+       // setCategorias(categorias => [inputValue, ...categorias]);
+       onNewCategory(inputValue.trim());
         setInputValue("");
     }
 
