@@ -15,16 +15,11 @@ export const FirstApp = ({title, subtitle, name }) =>{
     return (
     <>
         {/*SOY UN COMENTARIO*/}
-        {/*<h1>{title}</h1>*/}
-        
-        <div data-testid="test-title">{title}</div>
         <h1>{title}</h1>
-
         <p>{subtitle}</p>
-         {/*<p>{subtitle}</p>*/}
-        <p>{getMensaje()}</p>
-        <p>{ JSON.stringify(newMessage1) }</p>
-        <p>{newMessage}</p>
+        <h1>{getMensaje()}</h1>
+        <code>{ JSON.stringify(newMessage1) }</code>
+        <h1>{newMessage}</h1>
         <p>{name}</p>
     </>
     );
